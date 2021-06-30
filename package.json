@@ -1,0 +1,23 @@
+{
+  "name": "noderesponder",
+  "version": "1.0.0",
+  "description": "Simple Node responder driven by env for service mesh demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utherp0/noderesponder.git"
+  },
+  "author": "Uther",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utherp0/noderesponder/issues"
+  },
+  "homepage": "https://github.com/utherp0/noderesponder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "*"
+  }
+}
