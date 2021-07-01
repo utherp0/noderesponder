@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: responder1
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 8080
+      name: tcp
+      protocol: TCP
+    hosts:
+    - noderesponder1-meshtests.apps.cluster-e986.e986.sandbox206.opentlc.com

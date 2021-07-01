@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: responder1
+spec:
+  hosts:
+  - noderesponder1-meshtests.apps.cluster-e986.e986.sandbox206.opentlc.com
+  gateways:
+  - responder1
+  http:
+  - route:
+    - destination:
+        host: noderesponder1
+        port:
+          number: 8080
